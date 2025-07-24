@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Vibes</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      transition: all 0.6s ease;
+    }
+
+    h1, h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e91e63;
+    }
+
+    .emoji-bounce {
+      font-size: 3rem;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .page1 { background: linear-gradient(to right, #fc5c7d, #6a82fb); color: white; }
+    .page2 { background: linear-gradient(to right, #36d1dc, #5b86e5); color: white; }
+    .page3 { background: linear-gradient(to right, #ff6a00, #ee0979); color: white; }
+    .page4 { background: linear-gradient(to right, #00b09b, #96c93d); color: white; }
+
+    .nav-btns {
+      margin-top: 2rem;
+    }
+
+    .nav-btns a {
+      text-decoration: none;
+      background: white;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .nav-btns a:hover {
+      background: #f1f1f1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Login -->
+  <section class="page1" id="page1">
+    <h1>🎵 Welcome to Music Vibes 🎵</h1>
+    <p>Login to start your musical journey</p>
+    <input type="text" placeholder="Enter your name" /><br />
+    <input type="email" placeholder="Enter your email" /><br />
+    <a href="#page2"><button>Login</button></a>
+  </section>
+
+  <!-- Page 2: Songs List 1 -->
+  <section class="page2" id="page2">
+    <h2>🔥 Trending Songs 🔥</h2>
+    <p>🎧 Shape of You – Ed Sheeran</p>
+    <p>🎵 Blinding Lights – The Weeknd</p>
+    <p>🎶 Levitating – Dua Lipa</p>
+    <p>💃 Despacito – Luis Fonsi</p>
+    <div class="nav-btns">
+      <a href="#page1">Back</a>
+      <a href="#page3">Next</a>
+    </div>
+  </section>
+
+  <!-- Page 3: Songs List 2 + Emoji animation -->
+  <section class="page3" id="page3">
+    <h2>🎤 More Songs You’ll Love 🎤</h2>
+    <p>🌟 Calm Down – Rema & Selena</p>
+    <p>🎸 Perfect – Ed Sheeran</p>
+    <p>🎤 Senorita – Shawn Mendes & Camila</p>
+    <p>🎻 Tum Hi Ho – Arijit Singh</p>
+    <div class="emoji-bounce">🎵🎶🎵</div>
+    <div class="nav-btns">
+      <a href="#page2">Back</a>
+      <a href="#page4">Next</a>
+    </div>
+  </section>
+
+  <!-- Page 4: Credit -->
+  <section class="page4" id="page4">
+    <h1>🎉 Thank You! 🎉</h1>
+    <p>Made by <strong>Vishwaraj Jadhav</strong></p>
+    <div class="emoji-bounce">🎧❤️🎧</div>
+    <div class="nav-btns">
+      <a href="#page3">Back</a>
+    </div>
+  </section>
+
+</body>
+</html>
